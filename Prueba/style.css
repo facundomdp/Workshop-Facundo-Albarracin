@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/BACKGROUND.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    flex: 1;
+    position: relative;
+}
+
+.logo-central {
+
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 220px;
+    height: 220px;
+
+
+}
+
+.logo-central img {
+    margin-top: 40%;
+    max-width: 95%;
+}
+
+
+.formulario {
+    text-align: center;
+    transform: translate(0, 140%);
+}
+
+.formulario h2 {
+    font-size: medium;
+    font-family: 'futura-light', sans-serif;
+    color: white;
+    letter-spacing: 0.5em;
+}
+
+#nombre {
+    display: inline-flex;
+    width: 395px;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#email {
+    display: inline-flex;
+    width: 395px;
+    font-size: 12px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#asunto{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+#botonenviar {
+    margin-left: 330px;
+    font-size:12px;
+    font-family: 'Work Sans', sans-serif;
+    color:white;
+    background: rgb(214, 3, 3);
+    width: 70px;
+    height:25px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+footer {
+    background-color: rgb(48, 51, 58);
+    padding: 20px;
+}
+
+.gemed {
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    font-family: 'futura-bold', sans-serif;
+}
+
+.creando {
+    font-size: medium;
+    color: white;
+    font-family: 'futura-light', sans-serif;
+}
+
+.slogan {
+    text-align: center;
+}
+
+.lista {
+    list-style-type: none;
+    display: flex;
+    justify-content:center;
+    font-family: 'futura-bold', sans-serif;
+    font-size: small;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.lista li {
+    color: white;
+    text-decoration: none;
+}
+
+.lista li:not(:last-child)::after {
+    content: "|";
+    margin: 40px;
+}
+
+@media (max-width: 767px) {
+    .logo-central {
+      width: 150px;
+      height: 150px;
+    }
+  
+    #nombre {
+        display: inline-flex;
+        width: 200px;
+        font-size: 12px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        margin: 5px;
+        padding: 5px;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    #email {
+        display: inline-flex;
+        width: 200px;
+        font-size: 12px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 5px;
+        padding: 5px;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    #asunto{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        margin: 5px;
+        padding: 5px;
+        font-family: 'Work Sans', sans-serif;
+        
+    }
+    
+    .lista li:not(:last-child)::after {
+        margin: 5px;
+  }
+  .formulario {
+    text-align: center;
+    transform: translate(0, 100%);
+    flex-direction: column;
+    
+}
+#botonenviar {
+    font-size:8px;
+    font-family: 'Work Sans', sans-serif;
+    color:white;
+    background: rgb(214, 3, 3);
+    width: 50px;
+    height:18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+  }
+  
+@media (max-width: 480px) {
+    .formulario {
+      text-align: center;
+      transform: translate(0, 100%);
+      flex-direction: column;
+    }
+    .lista li:not(:last-child)::after {
+        margin: 2px;
+  }
+
+
+  .logo-central {
+    width: 100px;
+    height: 100px;
+  }
+
+  #nombre {
+      display: inline-flex;
+      width: 150px;
+      font-size: 8px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      margin: 5px;
+      padding: 5px;
+      font-family: 'Work Sans', sans-serif;
+  }
+  
+  #email {
+      display: inline-flex;
+      width: 150px;
+      font-size: 8px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 5px;
+      padding: 5px;
+      font-family: 'Work Sans', sans-serif;
+  }
+  
+  #asunto{
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      margin: 5px;
+      padding: 5px;
+      font-family: 'Work Sans', sans-serif;
+      
+  }
+ 
+  }
+
+  
